@@ -1,0 +1,55 @@
+@use 'variables';
+
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../image/sala_de_festa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secundaryTextColor;
+        content: '';
+        opacity: .4;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 36px;
+        line-height: 68px;
+        font-weight: 700;
+        text-align: center;
+        height: auto;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        height: 250px;
+        display: block;
+    }
+
+    @media(max-width: 640px) {
+        padding: 24px;
+
+        &__logo {
+            height: 100px;
+        }
+
+        &__text {
+            font-size: 21px;
+            line-height: 38px;
+            margin: 24px 0;
+        }
+    }
+}

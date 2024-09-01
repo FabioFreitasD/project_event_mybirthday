@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> 
 </head>
 <body>
-    
+    <header class="hero">
+        <div class="container">
+            <img class="hero__logo" src="./image/logo_aniversario-removebg.png" alt="bolo de aniversario">
+            <div class="hero__text">
+                <h1>
+                    Você esta pronto para a grande festa que começa em <span id="contador"></span> 
+                </h1>
+            </div>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Rua da Pedreira - Itamonte - Minas gerais
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        Grátis
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        07/09/2024 ás 19 hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="event event--convidados">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Convidados
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/area_convidados.jpg" alt="convidados">
+        </div>
+    </section>
+    <section class="event event--salao event--salao-image">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Salão da Festa
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/sala_de_festa.jpg" alt="salão da festa">
+        </div>
+    </section>
+    <section class="event event--diversao">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Diversão
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/piscina_com_baloes.jpg" alt="piscina com baloões">
+        </div>
+    </section>
+    <section class="event event--passeio event--passeio-image">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Passeio final
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/passeio_com_baloes.jpg" alt="passeio comba loes">
+        </div>
+    </section>
+    <section class="event event--musica">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Musica
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/DJ_music.jpg" alt="passeio comba loes">
+        </div>
+    </section>
+    <section class="event event--bolo event--bolo-image">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title title">
+                    Bolo
+                </h2>
+                <p class="event__details__description text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nam dolores voluptatem distinctio reprehenderit reiciendis asperiores dolor, harum eligendi at tempora voluptate ducimus assumenda enim officiis quia voluptatum dolore iste?
+                </p>
+            </div>
+            <img class="event__image" src="./image/bolo_de_aniversario.jpg" alt="passeio comba loes">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="./scripts/main.js"></script>
 </body>

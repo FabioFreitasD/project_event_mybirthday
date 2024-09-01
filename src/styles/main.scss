@@ -1,3 +1,50 @@
-body {
-    background: red;
+@use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: variables.$textColor;
+    list-style: none;
 }
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 90%;
+    }
+}
+
+@mixin titulos($fontSize: 18px) {
+    font-size: $fontSize;
+    font-weight: bold;
+    color: variables.$textColor;
+    margin-bottom: 16px;
+}
+
+@mixin paragrafo {
+    line-height: 22px;
+    color: variables.$textColor;
+}
+
+.title {
+    @include titulos
+}
+
+.text {
+    @include paragrafo
+}
+
